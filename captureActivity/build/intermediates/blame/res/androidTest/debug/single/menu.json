@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "D:\\float\\Mysecondpro\\captureActivity\\build\\intermediates\\res\\merged\\androidTest\\debug\\menu\\capture.xml",
+        "source": "D:\\float\\Mysecondpro\\captureActivity\\build\\intermediates\\bundles\\debug\\res\\menu\\capture.xml"
+    },
+    {
+        "merged": "D:\\float\\Mysecondpro\\captureActivity\\build\\intermediates\\res\\merged\\androidTest\\debug\\menu\\history.xml",
+        "source": "D:\\float\\Mysecondpro\\captureActivity\\build\\intermediates\\bundles\\debug\\res\\menu\\history.xml"
+    },
+    {
+        "merged": "D:\\float\\Mysecondpro\\captureActivity\\build\\intermediates\\res\\merged\\androidTest\\debug\\menu\\encode.xml",
+        "source": "D:\\float\\Mysecondpro\\captureActivity\\build\\intermediates\\bundles\\debug\\res\\menu\\encode.xml"
+    }
+]

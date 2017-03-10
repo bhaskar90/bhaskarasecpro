@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootlayouts"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    app:paddingStart="0dp">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:paddingStart="0dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_nav"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/bacg"
+            app:paddingStart="0dp">
+
+            <LinearLayout
+                android:id="@+id/toolbarlinear"
+                android:layout_width="match_parent"
+                android:layout_height="56sp"
+                android:background="@android:color/transparent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/backlayout"
+                    android:layout_width="35dp"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/vI_nav_drawer"
+                        android:layout_width="@dimen/backbutton_height"
+                        android:layout_height="@dimen/backbutton_height"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="5dp"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/drawer_icon" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/vT_nav_pagename"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text=""
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+
+
+                <RelativeLayout
+                    android:id="@+id/vR_nav_relative"
+                    android:visibility="invisible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+
+                    <ImageView
+                        android:id="@+id/vI_nav_notification"
+                        android:layout_width="@dimen/notificationsymbol_height"
+                        android:layout_height="@dimen/notificationsymbol_height"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/notification_bell"
+                        android:contentDescription="@string/app_name" />
+
+                    <TextView
+                        android:id="@+id/vT_nav_notificationvalues"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/round_bgcolor"
+                        android:gravity="center"
+                        android:textColor="@android:color/white"
+                        android:text=""
+                        android:layout_alignParentTop="true"
+                        android:layout_alignEnd="@+id/vI_nav_notification" />
+
+                </RelativeLayout>
+                <ImageView
+                    android:id="@+id/vI_nav_filter"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    android:layout_margin="10dp"
+                    android:contentDescription="@string/app_name" />
+                <ImageView
+                    android:id="@+id/vI_nav_overflow"
+                    android:layout_width="@dimen/backbutton_height"
+                    android:layout_height="@dimen/backbutton_height"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/overflow_icon"
+                    android:contentDescription="@string/app_name" />
+
+
+            </LinearLayout>
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_provider" />
+
+
+</android.support.design.widget.CoordinatorLayout>

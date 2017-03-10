@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <group android:checkableBehavior="single">
+
+            <item
+                android:id="@+id/nav_vo_home"
+                android:title="home" />
+            <item
+                android:id="@+id/nav_vo_refuel"
+                android:title="value1" />
+
+            <!-- <item
+                 android:id="@+id/nav_vo_nearby_refuel"
+                 android:title="@string/near_refuel" />-->
+
+            <item
+                android:id="@+id/nav_vo_mydriverveh"
+                android:title="value1" />
+            <item
+                android:id="@+id/nav_vo_trackdriver"
+                android:title="value1" />
+
+            <item
+                android:id="@+id/nav_vo_nearbygasstation"
+                android:title="value1" />
+            <item
+                android:id="@+id/nav_vo_paymenthistory"
+                android:title="value1" />
+
+
+        </group>
+
+
+    </menu>
+

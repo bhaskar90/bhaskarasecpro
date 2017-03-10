@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_view_pagers"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mmadapps.mysecondpro.ViewPagersActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:id="@+id/pagerlayout"
+        android:visibility="visible">
+
+        <com.mmadapps.mysecondpro.utils.PagerContainer
+            android:id="@+id/pager_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="0dp">
+
+            <android.support.v4.view.ViewPager
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="0dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp" />
+        </com.mmadapps.mysecondpro.utils.PagerContainer>
+
+        <com.viewpagerindicator.CirclePageIndicator
+            android:id="@+id/cP_ah_placeIndicator"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="0dp" />
+
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:layout_below="@+id/pagerlayout"
+        android:id="@+id/vP_ah_packagenamepager"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/black_color"
+        android:visibility="visible" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/vT_agm_tabLayout"
+        android:layout_width="match_parent"
+        android:layout_marginTop="11dp"
+        android:layout_height="50dp"
+        app:tabBackground="@android:color/transparent"
+        app:tabIndicatorColor="@color/indicator_foreground"
+        app:tabIndicatorHeight="3dp"
+        app:tabTextColor="@color/hint_color"
+        app:tabSelectedTextColor="@color/indicator_foreground"
+        app:tabMaxWidth="0dp"
+        app:tabGravity="fill"
+        app:tabMode="fixed"
+        app:tabTextAppearance="@style/navigationdrawerTextAppearance"
+        android:layout_below="@+id/vP_ah_packagenamepager"
+        android:layout_alignParentStart="true" />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vP_agm_notificationpager"
+        android:layout_below="@+id/vT_agm_tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
